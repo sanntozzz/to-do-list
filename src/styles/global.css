@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply m-0 box-border p-0;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+    @apply scroll-smooth;
+}
+
+body {
+    @apply bg-neutral-100 font-fira-code text-neutral-900 duration-150 dark:bg-neutral-800;
+}
+
+* {
+    @apply select-none;
+}
+
+.defaultContainer {
+    @apply w-full max-w-md rounded-xl bg-white p-6 ring-1 ring-white/10 drop-shadow-md duration-150 dark:bg-neutral-900;
+}
+
+.defaultInput {
+    @apply w-full rounded-lg p-2 text-xs ring-1 ring-black/10 duration-150 focus:outline-none dark:bg-neutral-700;
+}
+
+.defaultGroup {
+    @apply space-y-2 text-sm duration-150 dark:text-white;
+}
+
+.groupTitle {
+    @apply text-sm font-bold;
+}
+
+.defaultButton {
+    @apply w-full rounded-lg bg-neutral-200/50 p-2 text-xs font-bold duration-150 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700;
+}
+
+.defaultLinks {
+    @apply duration-150 hover:text-neutral-500 dark:hover:text-white;
+}
+
+.menuItem {
+    @apply flex w-full items-center space-x-2 p-2 text-xs duration-150 first:rounded-t-md last:rounded-b-md ui-active:bg-neutral-100 dark:text-white dark:ui-active:bg-neutral-800;
+}
