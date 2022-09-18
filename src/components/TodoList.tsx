@@ -17,17 +17,7 @@ function TodoList() {
     const localStorageKey = 'TodoList'
     const [isOpen, setIsOpen] = useState(false)
     const { isDarkMode, toggleDarkMode } = useDarkMode()
-    const [todos, setTodos] = useState<TodosProps[]>([
-        {
-            id: '3156af5d-bc3a-44f7-9d75-cf92eb145cbc',
-            text: 'asdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsaddasdasdsadsadasd',
-            date: '2022-09-20',
-            hour: '17:48',
-            description:
-                'asdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsaddasdasdsadsadasd',
-            isCompleted: false,
-        },
-    ])
+    const [todos, setTodos] = useState<TodosProps[]>([])
 
     useEffect(() => {
         const getTodos = localStorage.getItem(localStorageKey)
