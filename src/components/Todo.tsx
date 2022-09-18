@@ -90,7 +90,7 @@ function Todo({ todos, handleComplete, handleUpdate, handleDelete }: Props) {
                         <div
                             className={clsx(
                                 todo.isCompleted &&
-                                    'text-neutral-300 line-through  ',
+                                    'text-neutral-300 line-through dark:!text-neutral-600',
                                 'break-all duration-150 line-clamp-1 dark:text-white'
                             )}
                         >

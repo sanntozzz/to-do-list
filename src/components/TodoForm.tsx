@@ -21,6 +21,7 @@ function TodoForm({ isValues, onSubmit, isOpen, setIsOpen }: Props) {
     useEffect(() => {
         setInput(isValues ? isValues.text : '')
         setDate(isValues ? isValues.date : '')
+        setHour(isValues ? isValues.hour : '')
         setDescription(isValues ? isValues.description : '')
     }, [isValues])
 
