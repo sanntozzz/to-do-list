@@ -7,7 +7,7 @@
 -   Typescript
 -   Tailwind CSS
 
-## Veja o projeto a funcionar [aqui.]()
+## Veja o projeto a funcionar [aqui.](https://to-do-list-sanntozzz.vercel.app/)
 
 <img src="./public/images/exampleImg.png" width="700px" alt="Imagem exemplo do projeto" />
 
