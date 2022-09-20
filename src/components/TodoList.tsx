@@ -1,8 +1,7 @@
-import useDarkMode from 'hooks/useDarkMode'
+import { Todo, TodoForm } from 'components'
+import { useDarkMode } from 'hooks'
 import { Moon, Sun } from 'phosphor-react'
 import { useEffect, useState } from 'react'
-import Todo from './Todo'
-import TodoForm from './TodoForm'
 
 export interface TodosProps {
     id: string
@@ -13,7 +12,7 @@ export interface TodosProps {
     isCompleted: boolean
 }
 
-function TodoList() {
+export function TodoList() {
     const localStorageKey = 'TodoList'
     const [isOpen, setIsOpen] = useState(false)
     const { isDarkMode, toggleDarkMode } = useDarkMode()
@@ -115,5 +114,3 @@ function TodoList() {
         </>
     )
 }
-
-export default TodoList

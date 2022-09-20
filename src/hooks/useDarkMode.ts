@@ -5,7 +5,7 @@ interface useDarkModeOutput {
     toggleDarkMode: () => void
 }
 
-function useDarkMode(): useDarkModeOutput {
+export function useDarkMode(): useDarkModeOutput {
     const [isDarkMode, setDarkMode] = useState(false)
 
     const getlocalStorageTheme = localStorage.getItem('isDarkMode')
@@ -32,5 +32,3 @@ function useDarkMode(): useDarkModeOutput {
         toggleDarkMode: () => setDarkMode((isDarkMode) => !isDarkMode),
     }
 }
-
-export default useDarkMode

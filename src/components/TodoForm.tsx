@@ -10,7 +10,7 @@ interface Props {
     setIsOpen: (isOpen: boolean) => void
 }
 
-function TodoForm({ isValues, onSubmit, isOpen, setIsOpen }: Props) {
+export function TodoForm({ isValues, onSubmit, isOpen, setIsOpen }: Props) {
     const [input, setInput] = useState('')
     const [date, setDate] = useState('')
     const [hour, setHour] = useState('')
@@ -120,5 +120,3 @@ function TodoForm({ isValues, onSubmit, isOpen, setIsOpen }: Props) {
         </Modal>
     )
 }
-
-export default TodoForm

@@ -1,10 +1,11 @@
 import { Menu, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import { TodoForm, TodoView } from 'components'
 import { Check, DotsThree, Eye, Pencil, Trash } from 'phosphor-react'
 import { useState } from 'react'
-import TodoForm from './TodoForm'
+
 import { TodosProps } from './TodoList'
-import TodoView from './TodoView'
+
 interface Props {
     todos: TodosProps[]
     handleUpdate: (
@@ -18,7 +19,12 @@ interface Props {
     handleDelete: (id: TodosProps['id']) => void
 }
 
-function Todo({ todos, handleComplete, handleUpdate, handleDelete }: Props) {
+export function Todo({
+    todos,
+    handleComplete,
+    handleUpdate,
+    handleDelete,
+}: Props) {
     const [isValues, setIsValues] = useState<TodosProps>({
         id: '',
         text: '',
@@ -184,5 +190,3 @@ function Todo({ todos, handleComplete, handleUpdate, handleDelete }: Props) {
         </>
     )
 }
-
-export default Todo

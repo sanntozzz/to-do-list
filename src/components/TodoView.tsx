@@ -1,12 +1,13 @@
 import { Modal } from './Modal'
 import { TodosProps } from './TodoList'
+
 interface Props {
     isValues: TodosProps
     isOpen: boolean
     setIsOpen: (isOpen: boolean) => void
 }
 
-function TodoView({ isValues, isOpen, setIsOpen }: Props) {
+export function TodoView({ isValues, isOpen, setIsOpen }: Props) {
     return (
         <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
             <div className="defaultGroup">
@@ -35,5 +36,3 @@ function TodoView({ isValues, isOpen, setIsOpen }: Props) {
         </Modal>
     )
 }
-
-export default TodoView
