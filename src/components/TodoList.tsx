@@ -1,7 +1,8 @@
-import { Todo, TodoForm } from 'components'
-import { useDarkMode } from 'hooks'
+import { useDarkMode } from '@hooks/useDarkMode'
 import { Moon, Sun } from 'phosphor-react'
 import { useEffect, useState } from 'react'
+import { Todo } from './Todo'
+import { TodoForm } from './TodoForm'
 
 export interface TodosProps {
     id: string

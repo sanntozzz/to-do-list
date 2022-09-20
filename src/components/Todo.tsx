@@ -1,10 +1,12 @@
 import { Menu, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-import { TodoForm, TodoView } from 'components'
+
 import { Check, DotsThree, Eye, Pencil, Trash } from 'phosphor-react'
 import { useState } from 'react'
+import { TodoForm } from './TodoForm'
 
 import { TodosProps } from './TodoList'
+import { TodoView } from './TodoView'
 
 interface Props {
     todos: TodosProps[]

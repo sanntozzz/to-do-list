@@ -1,7 +1,9 @@
 import { Transition } from '@headlessui/react'
+import { useEscape } from '@hooks/useEscape'
+import { useOnClickOutside } from '@hooks/useOnClickOutside'
 import { ReactNode, useRef } from 'react'
 import { createPortal } from 'react-dom'
-import { useEscape, useOnClickOutside } from '../hooks'
+
 interface Props {
     children: ReactNode
     isOpen: boolean

@@ -1,4 +1,5 @@
-import { Footer, TodoList } from 'components'
+import { Footer } from '@components/Footer'
+import { TodoList } from '@components/TodoList'
 
 function App() {
     return (
